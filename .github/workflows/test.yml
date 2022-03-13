@@ -17,5 +17,5 @@ jobs:
       - run: |
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project init
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project update
-          ${{ github.workspace }}/src/dagger/cmd/dagger/dagger do deps
+          ${{ github.workspace }}/src/dagger/cmd/dagger/dagger do hello
         
