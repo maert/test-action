@@ -14,12 +14,12 @@ jobs:
         with:
           repo-token: ${{ secrets.GH_PAT }}
       
-      - name: Init dagger
+      - name: init dagger
         run: |
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project init
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project update
           
-      - name: Dagger do hello
+      - name: dagger do hello
         run: |
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger do hello
         
