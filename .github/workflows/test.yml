@@ -12,6 +12,5 @@ jobs:
       
       - uses: maert/dagger-github-action@v1
       
-      - run: |
-        ${{ github.workspace }}/src/dagger/cmd/dagger/dagger version
+      - run: ${{ github.workspace }}/src/dagger/cmd/dagger/dagger version
         
