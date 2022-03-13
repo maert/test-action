@@ -12,7 +12,6 @@ jobs:
       
       - uses: maert/dagger-github-action@v1.3
         with:
-          dagger-repo: maert/dagger
           repo-token: ${{ secrets.GH_PAT }}
       
       - run: |
