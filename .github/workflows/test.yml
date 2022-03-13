@@ -16,7 +16,6 @@ jobs:
           repo-token: ${{ secrets.GH_PAT }}
       
       - run: |
-          cd ${{ github.workspace }}
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project init
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project update
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger do deps
