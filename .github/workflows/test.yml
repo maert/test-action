@@ -1,0 +1,17 @@
+name: Build dagger workflow
+# Expects a PAT named 'GH_PAT' in Actions secrets
+
+on: [push]
+
+jobs:
+  checkout-build-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: maert/dagger-github-action@v1
+      
+      - run: |
+        ${{ github.workspace }}/src/dagger/cmd/dagger/dagger version
+        
