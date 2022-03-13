@@ -20,5 +20,6 @@ jobs:
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger project update
           
       - name: Dagger do hello
+        run: |
           ${{ github.workspace }}/src/dagger/cmd/dagger/dagger do hello
         
