@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - uses: maert/dagger-github-action@v1
+      - uses: maert/dagger-github-action@v1.1
       
       - run: ${{ github.workspace }}/src/dagger/cmd/dagger/dagger version
         
