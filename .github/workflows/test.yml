@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - uses: maert/dagger-github-action@v1.2
+      - uses: maert/dagger-github-action@v1.3
         with:
           repo-token: ${{ secrets.GH_PAT }}
       
