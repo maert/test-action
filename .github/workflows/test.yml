@@ -12,9 +12,9 @@ jobs:
       
       - uses: maert/dagger-github-action@v1.3
         with:
-          dagger-repo: maert/dagger # my fork. dagger/dagger is default
+          dagger-repo: maert/dagger # my fork, dagger/dagger is default
           dagger-git-ref: 0d9365e # main is default
-          repo-token: ${{ secrets.GH_PAT }}
+          repo-token: ${{ secrets.GH_PAT }} # optional, if needed
       
       - name: init dagger
         run: |
