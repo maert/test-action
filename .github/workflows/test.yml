@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - uses: maert/dagger-github-action@v1.3
+      - uses: maert/build-dagger-github-action@v1.3
         with:
           dagger-repo: maert/dagger # my fork, dagger/dagger is default
           dagger-git-ref: 0d9365e18164cebc7ab7e692c1aeddc3502a32b7 # main is default
